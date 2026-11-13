@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Inquire about purchasing light- and heavy-duty core parts from Midwest Diesel Core, a family-owned Chicagoland business."
+  >
+
+  <title>Buy Core | Midwest Diesel Core</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand header-brand" href="index.html">
+        <img
+          class="brand-logo"
+          src="images/mdcLogo.png"
+          alt="Midwest Diesel Core"
+        >
+      </a>
+
+      <button
+        class="menu-btn"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        ☰
+      </button>
+
+      <nav
+        class="nav-links"
+        id="main-navigation"
+        aria-label="Main navigation"
+      >
+        <a href="index.html">Home</a>
+        <a href="sellCore.html">Sell Core</a>
+        <a href="buyCore.html" aria-current="page">Buy Core</a>
+        <a href="contactUs.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero sell-hero" aria-labelledby="buy-title">
+      <div class="container hero-content">
+        <div class="eyebrow">Buy Core</div>
+
+        <h1 class="display" id="buy-title">
+          The cores you need.<br>
+          Start here.
+        </h1>
+
+        <p>
+          Looking for light- or heavy-duty core parts?
+          Tell Midwest Diesel Core what you need and
+          inquire about availability and pricing.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#buy-inquiry">
+            Inquire About Parts
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PURCHASING PROCESS -->
+    <section class="sell-process" aria-labelledby="process-title">
+      <div class="container">
+
+        <div class="sell-section-heading">
+          <span class="sell-label">How It Works</span>
+
+          <h2 id="process-title">
+            Find your next core in three steps.
+          </h2>
+
+          <p>
+            Share what you’re looking for, discuss your
+            options, and coordinate the details with our team.
+          </p>
+        </div>
+
+        <ol class="sell-steps">
+          <li>
+            <span class="sell-step-number" aria-hidden="true">
+              01
+            </span>
+
+            <h3>Tell Us What You Need</h3>
+
+            <p>
+              Describe the parts you’re looking to purchase.
+              Include part numbers, quantities, and any
+              specific requirements to help us identify
+              what you need.
+            </p>
+          </li>
+
+          <li>
+            <span class="sell-step-number" aria-hidden="true">
+              02
+            </span>
+
+            <h3>Discuss Availability and Pricing</h3>
+
+            <p>
+              We’ll review your inquiry and contact you
+              to discuss availability, pricing, and
+              additional details about the parts.
+            </p>
+          </li>
+
+          <li>
+            <span class="sell-step-number" aria-hidden="true">
+              03
+            </span>
+
+            <h3>Coordinate Your Purchase</h3>
+
+            <p>
+              Confirm the parts and purchase terms with
+              our team, then arrange shipping or an
+              appointment for pickup.
+            </p>
+          </li>
+        </ol>
+
+      </div>
+    </section>
+
+    <!-- PURCHASE INQUIRY -->
+    <section
+      class="sell-inquiry"
+      id="buy-inquiry"
+      aria-labelledby="inquiry-title"
+    >
+      <div class="container sell-inquiry-layout">
+
+        <div class="sell-inquiry-intro">
+          <span class="sell-label">Purchasing Inquiries</span>
+
+          <h2 id="inquiry-title">
+            What are you looking for?
+          </h2>
+
+          <p>
+            Leave your contact information and tell us
+            about the core parts you want to buy.
+          </p>
+
+          <p>
+            We buy and sell engine components, power steering
+            pumps, medium- and heavy-duty brake calipers,
+            diesel injectors, DPFs, engines, transmissions,
+            ECMs, starters, and alternators.
+          </p>
+
+          <p>
+            Submitting an inquiry does not place an order.
+            Availability and pricing must be confirmed
+            with our team.
+          </p>
+
+          <div class="sell-contact-note">
+            <strong>Prefer to call?</strong>
+
+            <a href="tel:+17732252312">
+              773-225-2312
+            </a>
+
+            <p>Visits are by appointment only.</p>
+          </div>
+        </div>
+
+        <form class="sell-form" id="purchase-inquiry-form">
+
+          <p class="sell-demo-notice" id="purchase-demo-notice">
+            Preview form only. Information entered here
+            is not sent or saved.
+          </p>
+
+          <p class="sell-required-note">
+            Fields marked * are required.
+          </p>
+
+          <div class="sell-form-grid">
+
+            <!-- NAME -->
+            <div class="sell-field">
+              <label for="full-name">Full name *</label>
+
+              <input
+                type="text"
+                id="full-name"
+                name="fullName"
+                autocomplete="name"
+                maxlength="100"
+                required
+              >
+            </div>
+
+            <!-- COMPANY -->
+            <div class="sell-field">
+              <label for="company">Company name (optional)</label>
+
+              <input
+                type="text"
+                id="company"
+                name="company"
+                autocomplete="organization"
+                maxlength="150"
+              >
+            </div>
+
+            <!-- PHONE -->
+            <div class="sell-field">
+              <label for="phone">Phone number *</label>
+
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                autocomplete="tel"
+                required
+              >
+            </div>
+
+            <!-- EMAIL -->
+            <div class="sell-field">
+              <label for="email">Email address *</label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+              >
+            </div>
+
+            <!-- PURCHASING DETAILS -->
+            <div class="sell-field sell-field-full">
+              <label for="purchasing-details">
+                Purchasing details / comments *
+              </label>
+
+              <textarea
+                id="purchasing-details"
+                name="purchasingDetails"
+                rows="7"
+                maxlength="5000"
+                placeholder="Tell us what you’re looking to buy. Include part types, part numbers, quantities, and any questions or specific requirements."
+                required
+              ></textarea>
+            </div>
+
+          </div>
+
+          <button
+            class="btn btn-primary"
+            id="purchase-submit"
+            type="submit"
+            aria-describedby="purchase-demo-notice"
+            disabled
+          >
+            Preview Inquiry
+          </button>
+
+          <noscript>
+            <p>Enable JavaScript to preview this form.</p>
+          </noscript>
+
+          <p
+            class="sell-form-status"
+            id="purchase-status"
+            role="status"
+          ></p>
+
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- COMPANY DESCRIPTION -->
+        <div>
+          <a class="brand footer-brand" href="index.html">
+            <img
+              class="footer-logo"
+              src="images/mdcLogo.png"
+              alt="Midwest Diesel Core Logo"
+            >
+
+            <span>Midwest Diesel Core</span>
+          </a>
+
+          <p style="margin-top: 18px; max-width: 360px;">
+            A family-owned Chicagoland business buying
+            and selling light- and heavy-duty core parts
+            at competitive prices.
+          </p>
+        </div>
+
+        <!-- WEBSITE NAVIGATION -->
+        <div>
+          <h4>Midwest Diesel Core</h4>
+
+          <a href="buyCore.html">Buy Core</a>
+          <a href="sellCore.html">Sell Core</a>
+          <a href="contactUs.html">Contact Us</a>
+        </div>
+
+        <!-- ADDRESS -->
+        <div>
+          <h4>Address</h4>
+
+          <a
+            href="https://www.google.com/maps/search/?api=1&amp;query=597+Williams+Street+Thornton+IL+60476"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            597 Williams Street<br>
+            Thornton, Illinois 60476
+          </a>
+
+          <p>
+            <strong>Appointment based meetings only.</strong>
+          </p>
+        </div>
+
+        <!-- SUPPORT -->
+        <div>
+          <h4>Support</h4>
+
+          <p>
+            Business hours:<br>
+            Mon – Fri: 9:00 AM – 4:00 PM Central Time
+          </p>
+
+          <a href="tel:+17732252312">
+            773-225-2312
+          </a>
+
+          <a href="contactUs.html">Contact</a>
+
+          <a href="shippingGuidelines.html">
+            Shipping Guidelines
+          </a>
+
+          <a href="coreCriteria.html">
+            Core Criteria
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>
+          &copy; <span id="year"></span> Midwest Diesel Core
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SHARED NAVIGATION SCRIPT -->
+  <script src="js/main.js"></script>
+
+  <!-- YEAR AND FRONT-END FORM PREVIEW -->
+  <script>
+    const footerYear = document.getElementById("year");
+
+    if (footerYear) {
+      footerYear.textContent = new Date().getFullYear();
+    }
+
+    const purchaseForm =
+      document.getElementById("purchase-inquiry-form");
+
+    const purchaseStatus =
+      document.getElementById("purchase-status");
+
+    const purchaseSubmit =
+      document.getElementById("purchase-submit");
+
+    if (purchaseForm && purchaseStatus && purchaseSubmit) {
+      purchaseForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        purchaseStatus.textContent =
+          "Your form passed validation. This is a preview only—" +
+          "your inquiry has not been sent or saved.";
+      });
+
+      purchaseForm.addEventListener("input", () => {
+        purchaseStatus.textContent = "";
+      });
+
+      purchaseSubmit.disabled = false;
+    }
+  </script>
+
+</body>
+</html>
