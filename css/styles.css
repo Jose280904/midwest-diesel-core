@@ -1004,3 +1004,178 @@ button:focus-visible {
     padding: 26px;
   }
 }
+
+/* SHIPPING AND CORE CRITERIA PAGES */
+
+.guide-section {
+  padding-block: 80px 100px;
+  background: var(--white);
+}
+
+.guide-layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  align-items: start;
+  gap: 65px;
+}
+
+.guide-sidebar {
+  min-width: 0;
+  position: sticky;
+  top: 24px;
+  padding: 24px;
+  background: var(--light-background);
+  border-top: 4px solid var(--royal-blue);
+  border-radius: 4px;
+}
+
+.guide-sidebar h2 {
+  margin-bottom: 18px;
+  color: var(--dark-blue);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.guide-sidebar a {
+  display: block;
+  padding-block: 10px;
+  color: var(--body-text);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.guide-sidebar a + a {
+  border-top: 1px solid #dce4f2;
+}
+
+.guide-sidebar a:hover {
+  color: var(--cobalt-blue);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.guide-content {
+  min-width: 0;
+  max-width: 850px;
+}
+
+.guide-block {
+  scroll-margin-top: 30px;
+}
+
+.guide-block + .guide-block {
+  margin-top: 44px;
+  padding-top: 44px;
+  border-top: 1px solid #dce4f2;
+}
+
+.guide-block h2,
+.guide-cta h2 {
+  margin-bottom: 20px;
+  color: var(--dark-blue);
+  font-size: clamp(26px, 2.8vw, 36px);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.25;
+}
+
+.guide-block h3 {
+  margin-top: 28px;
+  margin-bottom: 14px;
+  color: var(--cobalt-blue);
+  font-size: 21px;
+  line-height: 1.4;
+}
+
+.guide-block p,
+.guide-block li,
+.guide-cta p {
+  color: var(--body-text);
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.guide-block p {
+  margin-bottom: 18px;
+}
+
+.guide-block ul {
+  margin: 18px 0;
+  padding-left: 24px;
+}
+
+.guide-block li + li {
+  margin-top: 10px;
+}
+
+.guide-block li::marker {
+  color: var(--cobalt-blue);
+}
+
+.guide-content a:not(.btn) {
+  color: var(--cobalt-blue);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.guide-content a:not(.btn):hover {
+  color: var(--royal-blue);
+}
+
+.guide-callout {
+  margin-top: 28px;
+  padding: 24px;
+  background: #edf2ff;
+  border-left: 4px solid var(--royal-blue);
+}
+
+.guide-callout strong {
+  color: var(--dark-blue);
+}
+
+.guide-callout p {
+  margin: 8px 0 0;
+}
+
+.guide-cta {
+  margin-top: 50px;
+  padding: 32px;
+  background: var(--light-background);
+  border-radius: 6px;
+}
+
+.guide-cta p {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 900px) {
+  .guide-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+  }
+
+  .guide-sidebar {
+    position: static;
+  }
+
+  .guide-content {
+    max-width: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .guide-section {
+    padding-block: 55px 70px;
+  }
+
+  .guide-block + .guide-block {
+    margin-top: 32px;
+    padding-top: 32px;
+  }
+
+  .guide-callout,
+  .guide-cta {
+    padding: 22px;
+  }
+}
